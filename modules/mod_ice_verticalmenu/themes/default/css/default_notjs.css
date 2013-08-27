@@ -1,0 +1,106 @@
+
+/*---------------------------------------------------------------- 
+  Copyright:
+  (C) 2008 - 2010 IceTheme
+  
+  License:
+  GNU/GPL http://www.gnu.org/copyleft/gpl.html
+  
+  Author:
+  IceTheme - http://wwww.icetheme.com
+---------------------------------------------------------------- */
+
+.iceverticalmenu {
+	width:100%;}
+	
+	.iceverticalmenu ul#iceverticalmenu {
+		margin:0;
+		padding:0;		
+		position: relative;
+		list-style-type:none;
+		z-index: 999;}
+		
+		.iceverticalmenu ul#iceverticalmenu li{
+			width:100%;
+			display:block;
+			margin: 0;
+			padding: 0;
+			position:relative;
+			/*
+			position: relative;
+			z-index: 10;
+			*/}
+
+		.iceverticalmenu #iceverticalmenu .iceMenuLiLevel_1,
+		.iceverticalmenu #iceverticalmenu .lofitem2 {}
+
+			.iceverticalmenu #iceverticalmenu a {
+				display:block;
+				color:#666;
+				position:relative;
+				padding:6px 0;
+				text-decoration:none;
+				border-bottom:1px dotted #ccc;
+				-webkit-transition:background-color color .3s ease-out;
+				-moz-transition:background-color .3s ease-out, color .3s ease-out;
+				-o-transition:background-color .5s ease-out; 
+				transition:background-color .5s ease-out;}
+				
+				
+				/* on hover */
+				.iceverticalmenu #iceverticalmenu .current > a{
+					background-color: #eee;
+					color: #222 }
+				
+				/* when is current */		
+				.iceverticalmenu #iceverticalmenu .current > a{
+					background-color:#eee;
+					color: #222 }				
+						
+					.iceverticalmenu #iceverticalmenu > .current > a:before {
+						content:"";
+						background:url(images/current.png) no-repeat center right;
+						position:absolute;
+						height:20px;
+						width:14px;
+						right:-24px}	
+						
+				
+				
+				
+				.iceverticalmenu #iceverticalmenu .iceMenuLiLevel_1 img{
+					margin:0 9px 0 5px;
+					float:left;}
+				
+				
+				.iceverticalmenu #iceverticalmenu .iceMenuLiLevel_1 a span.counter {
+					color:#999;
+					padding-left:3px}
+					
+					
+				/* when has childs items */	
+				.iceverticalmenu #iceverticalmenu .iceMenuLiLevel_1 a i{
+					background: url(images/next.png) no-repeat top;
+					display: block;
+					height: 14px;
+					position: absolute;
+					right: 5px;
+					top: 12px;
+					width: 14px;}
+					.iceverticalmenu #iceverticalmenu .current > a i{
+						background-position:bottom}
+
+		/* second level menu */			
+		.iceverticalmenu #iceverticalmenu .iceMenuLiLevel_1 ul.icesubMenu{
+			width:100%;
+			position:absolute;
+			top: -1px;
+			left:99.9%;
+			padding:0;
+			margin:0;
+			z-index: 100;}
+		.iceverticalmenu #iceverticalmenu li.loffirst{ }
+		.iceverticalmenu #iceverticalmenu .iceMenuLiLevel_2.parent .icesubMenu { left:0%;}
+		#iceverticalmenu ul.icesubMenu li div.iceCols li.parent{ background:url("../images/arrow.png") no-repeat scroll 94% 45% transparent}
+		div.iceverticalmenu #iceverticalmenu ul.icesubMenu li a.iceMenuTitle{ width:88%; }
+		#iceverticalmenu .icesubMenu .iceCols .icemega_modulewrap ul { display:block !important; }

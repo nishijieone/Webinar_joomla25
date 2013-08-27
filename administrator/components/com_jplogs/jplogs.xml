@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="1.6.0" method="upgrade">
+	<name>JP Logs</name>
+	<creationDate>2011-11-22</creationDate>
+	<author>Joomla!Projects</author>
+	<authorEmail>administracion@joomlanetprojects.com</authorEmail>
+	<authorUrl>http://www.joomlanetprojects.com</authorUrl>
+	<copyright>Copyright © 2009 - All rights reserved.</copyright>
+	<license>GNU/GPL</license>
+	<version>1.0.0</version>
+	<description><![CDATA[COM_JP_LOGS_DESCRIPTION]]></description>
+    <scriptfile>script.php</scriptfile>
+	<administration>
+		<menu img="components/com_jplogs/assets/images/logs16.png" link="option=com_jplogs&amp;view=jplogs">COM_JP_LOGS_MENU_NAME</menu>
+		<files folder="backend">
+			<filename>index.html</filename>
+			<filename>version.php</filename>
+			<filename>admin.jplogs.php</filename>
+			<filename>controller.php</filename>
+            <filename>config.xml</filename>
+            <filename>access.xml</filename>
+            <filename>CHANGELOG.php</filename>
+            <filename>license.txt</filename>
+            <folder>controllers/</folder>
+			<folder>views/</folder>
+            <folder>helpers/</folder>
+			<folder>models/</folder>
+			<folder>assets/</folder>
+			<folder>liveupdate/</folder>
+			<folder>libraries/</folder>
+		</files>
+		<languages folder="languages-admin">
+			<language tag="en-GB">en-GB/en-GB.com_jplogs.ini</language>
+                        <language tag="en-GB">en-GB/en-GB.com_jplogs.sys.ini</language>
+                </languages>
+	</administration>
+</extension>

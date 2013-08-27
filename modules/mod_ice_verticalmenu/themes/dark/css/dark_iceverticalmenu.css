@@ -1,0 +1,274 @@
+/**
+ * iceverticalmenu Extension for Joomla 1.6 By IceTheme
+ * 
+ * 
+ * @copyright	Copyright (C) 2008 - 2011 IceTheme.com. All rights reserved.
+ * @license		GNU General Public License version 2
+ * 
+ * @Website 	http://www.icetheme.com/Joomla-Extensions/iceverticalmenu.html
+ * @Support 	http://www.icetheme.com/Forums/iceverticalmenu/
+ *
+ */
+ 
+
+
+div.iceverticalmenu { 
+	position:relative;}
+	
+
+div.iceverticalmenu ul#iceverticalmenu {
+	display:block;
+	background:#222;
+	list-style:none;
+	margin:0;
+	padding: 0;
+	z-index:5;
+	/*position:absolute;*/
+	top:0;
+	left:0;}	
+	
+	div.iceverticalmenu ul#iceverticalmenu li { 
+		display:block;
+		list-style:none;
+		margin:0;
+		padding:0;
+		position:relative;
+		border-right:1px solid #555;
+		/*float:left;*/
+		} 
+		
+		div.iceverticalmenu ul#iceverticalmenu li a.iceMenuTitle,
+		div.iceverticalmenu ul#iceverticalmenu li span.separator,
+		div#iceVerticalSubMenusContainer a.iceMenuTitle,
+		div#iceVerticalSubMenusContainer span.separator {
+			text-decoration:none;
+			display:block;
+			height:40px;
+			padding:5px 15px;
+			color:#ccc;
+			text-shadow:1px 1px 1px #000;
+			-webkit-transition:all .3s linear;
+			-moz-transition:all .3s linear;
+			-o-transition:all .3s linear;
+			transition:all .3s linear}
+	
+	
+			div.iceverticalmenu ul#iceverticalmenu li span.icemega_title,
+			div#iceVerticalSubMenusContainer span.icemega_title {
+				font-size:1.3em;}
+		
+			div.iceverticalmenu ul#iceverticalmenu li span.icemega_desc,
+			div#iceVerticalSubMenusContainer span.icemega_desc {
+				display:block;
+				font-family:Verdana, Geneva, sans-serif;
+				padding:0;
+				font-size:.9em;
+				line-height:1.2em;
+				color:#999!important;
+				text-shadow:none!important}
+
+
+
+			/* when is current and active*/
+			div.iceverticalmenu ul#iceverticalmenu li.active a.iceMenuTitle,
+			div.iceverticalmenu ul#iceverticalmenu li.active span.separator,
+			div.iceverticalmenu ul#iceverticalmenu li.current a.iceMenuTitle,
+			div.iceverticalmenu ul#iceverticalmenu li.current span.separator,
+			div.iceverticalmenu ul#iceverticalmenu li:hover a.iceMenuTitle,
+			div.iceverticalmenu ul#iceverticalmenu li:hover span.separator  {
+				background:#222}
+			
+			div.iceverticalmenu ul#iceverticalmenu li.active a.iceMenuTitle,
+			div.iceverticalmenu ul#iceverticalmenu li.active span.separator,
+			div#iceVerticalSubMenusContainer li.active a.iceMenuTitle, 
+			div#iceVerticalSubMenusContainer li.active span.separator,
+			div.iceverticalmenu ul#iceverticalmenu li:hover a.iceMenuTitle,
+			div.iceverticalmenu ul#iceverticalmenu li:hover span.separator {	  
+				color:#F0C237;
+				text-shadow:1px 1px 1px #000;}
+				
+				
+					
+					
+
+/* All submenu OLs and ULs */
+div#iceVerticalSubMenusContainer {    
+	display:block;     
+	position:absolute;    
+	top:0;    
+	left:0;    
+	width:100%;    
+	height:0;    
+	overflow:visible;
+	z-index:1000000000;
+	list-style:none;}
+
+	#iceverticalmenu ul.icesubMenu,
+	#iceVerticalSubMenusContainer ul.icesubMenu {  
+		background:#222;
+		text-align:left;
+		padding:0;
+		margin:0;
+		list-style-type:none;
+		left:0;
+		border:1px solid rgba(255,255,255,.2);}
+		#iceverticalmenu ul.sub_level_1,
+		#iceVerticalSubMenusContainer ul.sub_level_1 { 
+			border-top:none;}
+		
+		#iceverticalmenu ul.icesubMenu li,
+		#iceVerticalSubMenusContainer ul.icesubMenu li {
+			margin:0;
+			padding:0;}
+
+		div#iceVerticalSubMenusContainer ul.icesubMenu li div.iceCols { 
+			overflow: hidden;
+			width:100%;
+			padding-bottom:10px}
+			div#iceVerticalSubMenusContainer ul.icesubMenu li div.iceCols li {
+				padding:0 15px;} 
+			
+
+			div#iceVerticalSubMenusContainer a.iceMenuTitle,
+			div#iceVerticalSubMenusContainer span.separator,
+			div.iceverticalmenu #iceverticalmenu ul.icesubMenu li a.iceMenuTitle,
+			div.iceverticalmenu #iceverticalmenu ul.icesubMenu li span.separator {
+				height:auto;
+				/*min-width:235px;*/
+				padding:5px 0 8px 16px;
+				color:#ccc;
+				text-shadow:1px 1px 1px #000;
+				margin:0;
+				background:url(../images/point.png) no-repeat 0% 45%;			
+				border-bottom:1px dotted #555;}
+				
+						
+				
+				div#iceVerticalSubMenusContainer span.icemega_title {	}
+
+
+				/* when is parent */
+				div#iceVerticalSubMenusContainer ul.icesubMenu li div.iceCols li.parent {
+					background:url(../images/arrow.png) no-repeat 94% 45%;} 
+				
+
+/* sub menu links on hover or focus */
+#iceVerticalSubMenusContainer a.iceMenuTitle:hover, 
+#iceVerticalSubMenusContainer a.iceMenuTitle:focus, 
+#iceverticalmenu a.mainMenuParentBtnFocused, 
+#iceVerticalSubMenusContainer a.subMenuParentBtnFocused,
+#iceverticalmenu li a.iceMenuTitle:hover,
+#iceverticalmenu li a.iceMenuTitle:hover span,
+#iceverticalmenu li a.iceMenuTitle:focus span,
+#iceverticalmenu li a.iceMenuTitle:focus{
+	color:#F0C237!important;
+	text-shadow:1px 1px 1px #000!important}
+
+
+
+/* ----[ OLs ULs, LIs, and DIVs ]----*/
+
+/* Submenu Outer Wrapper - each submenu is inside a div with this class - javascript users only */
+.smOW{ 
+	display:none; 
+	position: absolute; 
+	overflow:hidden; 
+	padding:0;
+	margin:0 0 0 -1px;}
+	
+#iceverticalmenu li a.iceMenuTitle img{ border:none}
+a.iceMenuTitle img{ border:none}  
+
+
+/* --------------------------[ The below is just for non-javscript users ]--------------------------*/
+#iceverticalmenu li li {   
+float:none; }
+
+#iceverticalmenu li li a{ /* Just submenu links*/    
+	position:relative;
+	height:auto!important;
+	float:none;}
+
+#iceverticalmenu li ul.sub_level_1 {
+	position: absolute;
+	width: 10em;
+	margin-left: -1000em;
+}
+#iceverticalmenu li ul.sub_level_1 li{
+	background:none;
+	float:none;
+	border-right:none;
+	min-width:245px;
+}
+#iceverticalmenu li ul.sub_level_1 li div.iceCols li { padding-left:15px}
+	#iceverticalmenu li ul.sub_level_2 li div.iceCols li { padding-left:0}
+
+
+#iceverticalmenu li ul.sub_level_1 ul {
+	padding-left:0}
+
+#iceverticalmenu li ul li ul.sub_level_2{
+	position: absolute;
+	width: 10em;
+	margin-left: -1000em;
+}
+
+/* third-and-above-level lists */
+
+/* lists nested under hovered list items */
+#iceverticalmenu li:hover ul {  margin-left: 0; }
+#iceverticalmenu li li li.iceMenuLiLevel_2:hover ul.sub_level_2 {   margin-left:21em; z-index:99; position:absolute; margin-top:-3.5em;  } 
+#iceverticalmenu li li.iceMenuLiLevel_2:hover ul.sub_level_2{    margin-left:8em; position: relative; margin-top:-3.5em;  }  
+/*#iceverticalmenu li li:hover ul {    margin-left: 10em; margin-top:-2.5em;}  */
+			 
+/* extra positioning rules for limited noscript keyboard accessibility */
+#iceverticalmenu li a:focus + ul {  margin-left: 0; margin-top:2.2em; }
+#iceverticalmenu li li a:focus + ul { left:0; margin-left: 1010em; margin-top:-2.2em;}
+#iceverticalmenu li li a:focus {left:0;  margin-left:1000em; width:10em;  margin-top:0;}
+#iceverticalmenu li li li a:focus {left:0; margin-left: 2010em; width: 10em;  margin-top:-1em;}
+#iceverticalmenu li:hover a:focus{ margin-left: 0; }
+#iceverticalmenu li li:hover a:focus + ul { margin-left: 10em; }
+
+.icesubMenu { position:absolute}
+
+
+/* for the modules insdie the dropdown */
+.icesubMenu .icemega_cover_module {
+	position:relative; 
+	overflow:hidden; 
+	width:auto!important;
+	padding:10px 15px}
+	div#iceVerticalSubMenusContainer .icemega_cover_module {
+		padding-left:0;
+		padding-right:0}
+
+
+	.icesubMenu .icemega_cover_module .icemega_modulewrap { 
+		position:relative;
+		color:#fff;
+		color:rgba(255,255,255,.7);}
+
+
+	.icesubMenu .icemega_cover_module .icemega_modulewrap span.iceModuleTile {
+		color:#fff;
+		font-family:Georgia, "Times New Roman", Times, serif;
+		font-size:1.4em;
+		text-shadow:1px 1px 1px rgba(0,0,0,.8);
+		margin-bottom:5px;
+		display:block;}
+		
+	.icesubMenu .icemega_cover_module .icemega_modulewrap p:last-child {
+		margin-bottom:.25em}
+		
+	.icesubMenu .icemega_cover_module .icemega_modulewrap a { 
+		color:#F0C237;}		
+
+
+
+
+div#iceVerticalSubMenusContainer ul.icesubMenu li div.iceCols ul {
+	list-style:none;
+	padding:0px;
+	margin:0px;}
+#iceverticalmenu .iceMenuLiLevel_1 a { border-bottom:1px dotted #CCCCCC; padding:6px 0; }
+	

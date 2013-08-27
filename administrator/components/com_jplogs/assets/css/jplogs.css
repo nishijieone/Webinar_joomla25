@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* CSS Document */
+
+.icon-48-logs48 { 
+	background-image: url(../images/logs48.png); 
+}
+.icon-32-download32 { 
+	background-image: url(../images/download32.png); 
+}
+.icon-32-remove32 { 
+	background-image: url(../images/remove32.png); 
+}
+
+/* line numbers */
+ol.lncode { margin: 15px 0; padding: 0 0 0 20px; background: #e8e8e8; border: 1px solid #ccc; line-height: 100%; font: normal 12px Courier, monospace; }
+ol.lncode li { margin: 0 0 0 20px; padding: 5px 10px 5px 10px; list-style: decimal-leading-zero; line-height: 100%; word-wrap: break-word; border-left: 1px solid #ccc; color: #999; background: #fff; }
+ol.lncode li pre { display: block; margin: 0; padding: 0; color: #333; }
